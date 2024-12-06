@@ -1,0 +1,241 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #0073e6;
+    padding: 1rem;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul li a.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('assets/images/hero/default-hero.jpg') no-repeat center/cover;
+    color: black;
+    padding: 4rem 1rem;
+}
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Features Section */
+.features, .product-overview {
+    padding: 2rem 0;
+    background: #fff;
+    text-align: center;
+}
+
+.features h2, .product-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.features .container, .product-overview .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Buttons */
+.cta-btn {
+    background: #0073e6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* About Section */
+.about, .team, .locations, .contact {
+    padding: 2rem 0;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+.about h2, .team h2, .locations h2, .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about p, .team p, .locations ul li, .contact ul li {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.team-member {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: #0073e6;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Testimonials */
+.testimonials {
+    background: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .features .container, .product-overview .container {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
