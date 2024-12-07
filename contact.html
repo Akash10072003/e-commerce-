@@ -9,47 +9,70 @@
     <style>
   /* Contact Section */
 /* Contact Section */
+/* Contact Section */
 .contact {
-    padding: 2rem 0;
-    background: #f4f4f4;
     text-align: center;
+    padding: 2rem 0;
+}
+
+.contact .logo {
+    margin-bottom: 1.5rem;
+}
+
+.contact .logo h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0073e6;
 }
 
 .contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #555;
 }
 
-.contact-icons {
+/* Icons Container */
+.contact .icons {
     display: flex;
     justify-content: center;
-    gap: 5rem; /* Reduced gap */
-    margin-top: 1rem;
+    gap: 2rem;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
 }
 
-.contact-item {
-    text-align: center;
-    width: 120px; /* Set a fixed width for consistent alignment */
-}
-
-.contact-item .icon {
-    font-size: 2.5rem;
-    color: #0073e6;
+.contact .contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-decoration: none;
-    transition: transform 0.3s ease, color 0.3s ease;
+    color: #0073e6;
+    font-size: 1.2rem;
 }
 
-.contact-item .icon:hover {
-    color: #005bb5;
-    transform: scale(1.2);
+.contact .contact-icon i {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
-.contact-item p {
+.contact .contact-icon p {
+    font-size: 1.2rem;
     margin-top: 0.5rem;
-    font-size: 1rem;
     color: #333;
-    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact .icons {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 1.5rem; /* Adjust spacing between icons */
+    }
+
+    .contact .contact-icon {
+        width: 100%; /* Full-width for better alignment */
+    }
+
+    .contact .contact-icon i {
+        font-size: 2rem; /* Adjust icon size for smaller screens */
+    }
 }
 
     </style>
@@ -60,7 +83,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About Us</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html" class="active">Contact Us</a></li>
             </ul>

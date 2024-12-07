@@ -6,6 +6,34 @@
     <meta name="description" content="Explore high-quality water purifiers, geysers, and kitchen chimneys.">
     <title>Home | Your Brand</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+  /* Styling for the text beneath the heading */
+.why-text {
+    margin-top: 15px; /* Consistent spacing */
+    margin-bottom: 20px; /* Space between text and the grid */
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    width: 100%; /* Full width for consistency */
+}
+
+/* Adding a max width for larger screens */
+.why-text p {
+    margin: 0 auto; /* Center text horizontally */
+    max-width: 800px; /* Restrict width for readability */
+}
+
+/* Ensure consistent spacing on larger screens */
+@media (min-width: 768px) {
+    .why-text {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -36,6 +64,14 @@
     <section class="features">
         <div class="container">
             <h2>Why Choose Us?</h2>
+            <div class="why-text">
+                <p>
+                    We provide these products at very affordable prices. The starting price of a water purifier is only ₹6000.
+                </p>
+                <p style="margin-top: 20px;">
+                    Additionally, we also offer after-warranty maintenance at a very low cost to ensure your products remain in perfect working condition.
+                </p>
+            </div>
             <div class="feature-grid">
                 <div class="feature">
                     <h3>Water Purifiers</h3>
@@ -50,6 +86,7 @@
                     <p>Modern design with advanced suction technology.</p>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -58,7 +95,7 @@
         <div class="container">
             <h2>What Our Customers Say</h2>
             <div class="testimonial">
-                <p>"The best water purifier I’ve ever used. Excellent customer service too!"</p>
+                <p>"The best water purifier I've ever used. Excellent customer service too!"</p>
                 <cite>- A Happy Customer</cite>
             </div>
         </div>
