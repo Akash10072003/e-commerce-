@@ -1,0 +1,43 @@
+/* Product Overview */
+.product-overview {
+    padding: 2rem 0;
+    background: #fff;
+    text-align: center;
+}
+
+.product-overview h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.product-overview .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.product {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.product p {
+    font-size: 1rem;
+    color: #555;
+}

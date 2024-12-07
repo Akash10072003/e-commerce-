@@ -5,9 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products - Your Company</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <style>
+        /* Features Section */
+.features {
+    padding: 2rem 0;
+    background: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.feature img {
+    width: 100%;
+    max-width: 150px; /* Adjust image size as needed */
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    max-height: 250px;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+@media (max-width: 600px) {
+            .feature-grid {
+                grid-template-columns: 1fr; /* Stacks images vertically */
+            }
+
+            .features h2 {
+                font-size: 1.5rem; /* Smaller heading for mobile */
+            }
+
+            .feature h3 {
+                font-size: 1.2rem; /* Smaller feature title for mobile */
+            }
+
+            .feature p {
+                font-size: 0.9rem; /* Smaller description for mobile */
+            }
+        }
+
+
+    </style>
 </head>
 <body>
     <header>
+        <h1 class="center-heading">AQUA SMART</h1>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -25,26 +92,33 @@
 
     <section class="features">
         <div class="container">
-            <div class="feature">
-                <h3>Water Purifiers</h3>
-                <p>Advanced filtration for clean and safe drinking water.</p>
-                <a href="water-purifier.html" class="cta-btn">Learn More</a>
-            </div>
-            <div class="feature">
-                <h3>Geysers</h3>
-                <p>Efficient and durable geysers for all seasons.</p>
-                <a href="geysers.html" class="cta-btn">Learn More</a>
-            </div>
-            <div class="feature">
-                <h3>Kitchen Chimneys</h3>
-                <p>Modern designs for a smoke-free kitchen experience.</p>
-                <a href="kitchen-chimneys.html" class="cta-btn">Learn More</a>
-            </div>
+            <div class="feature-grid">
+                <div class="feature">
+                        <img src="assets/images/water-purifier.jpeg" alt="water-purifier">
+                        <h3>Water Purifiers</h3>
+                        <p>Advanced filtration for clean and safe drinking water.</p>
+                        <a href="water-purifier.html" class="cta-btn">Learn More</a>
+                </div>
+                <div class="feature">
+                    <img src="assets/images/geysers.webp" alt="Geysers">
+                    <h3>Geysers</h3>
+                    <p>Efficient and durable geysers for all seasons.</p>
+                    <a href="geysers.html" class="cta-btn">Learn More</a>
+                </div>
+                <div class="feature">
+                    <img src="assets/images/chimney1.jpg" alt="chimneys">
+                    <h3>Kitchen Chimneys</h3>
+                    <p>Modern designs for a smoke-free kitchen experience.</p>
+                    <a href="kitchen-chimneys.html" class="cta-btn">Learn More</a>
+                </div>
+            </div>    
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 Your Company. All Rights Reserved.</p>
     </footer>
+
 </body>
+
 </html>

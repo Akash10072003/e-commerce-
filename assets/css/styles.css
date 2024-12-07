@@ -21,6 +21,17 @@ ul {
     list-style: none;
 }
 
+/* Centering the Heading */
+.center-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem; 
+    text-align: center; 
+    margin: 0; 
+}
+
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -101,6 +112,23 @@ ul {
 .feature p {
     font-size: 1rem;
     color: #555;
+}
+
+
+
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* height: 100vh;  */
+    
+    
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 /* Buttons */
@@ -239,3 +267,5 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+
+

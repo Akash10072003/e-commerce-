@@ -5,9 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Your Company</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+  /* Contact Section */
+/* Contact Section */
+.contact {
+    padding: 2rem 0;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 5rem; /* Reduced gap */
+    margin-top: 1rem;
+}
+
+.contact-item {
+    text-align: center;
+    width: 120px; /* Set a fixed width for consistent alignment */
+}
+
+.contact-item .icon {
+    font-size: 2.5rem;
+    color: #0073e6;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item .icon:hover {
+    color: #005bb5;
+    transform: scale(1.2);
+}
+
+.contact-item p {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+    </style>
 </head>
 <body>
     <header>
+        <h1 class="center-heading">AQUA SMART</h1>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -26,15 +75,32 @@
     <section class="contact">
         <div class="container">
             <h2>Reach Out to Us</h2>
-            <form action="#" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                <button type="submit" class="cta-btn">Send Message</button>
-            </form>
+            <div class="contact-icons">
+                <!-- Phone Icon -->
+                <div class="contact-item">
+                    <a href="tel:7980374301" class="icon" title="Call Us">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <p>7980374301</p>
+                </div>
+                <!-- WhatsApp Icon -->
+                <div class="contact-item">
+                    <a href="https://wa.me/7980374301" class="icon" title="Message Us on WhatsApp" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <p>7980374301</p>
+                </div>
+                <!-- Email Icon -->
+                <div class="contact-item">
+                    <a href="mailto:aquasmart03@gmail.com" class="icon" title="Email Us">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                    <p>aquasmart03@gmail.com</p>
+                </div>
+            </div>
         </div>
     </section>
-
+    
     <footer>
         <p>&copy; 2024 Your Company. All Rights Reserved.</p>
     </footer>
