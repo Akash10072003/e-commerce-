@@ -13,7 +13,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 
@@ -21,44 +21,9 @@ ul {
     list-style: none;
 }
 
-/* Centering the Heading */
-.center-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem; 
-    text-align: center; 
-    margin: 0; 
-}
 
 
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background: #0073e6;
-    padding: 1rem;
-    color: white;
-}
 
-.navbar ul {
-    display: flex;
-    gap: 1rem;
-}
-
-.navbar ul li {
-    list-style: none;
-}
-
-.navbar ul li a {
-    color: white;
-    font-weight: bold;
-}
-
-.navbar ul li a.active {
-    text-decoration: underline;
-}
 
 /* Hero Section */
 .hero {
@@ -141,6 +106,22 @@ ul {
     display: inline-block;
     margin-top: 1rem;
 }
+
+/* Remove underline from links in the navbar */
+.navbar .nav-link {
+    text-decoration: none !important;
+}
+
+/* Remove underline on hover */
+.navbar .nav-link:hover {
+    text-decoration: none !important;
+}
+
+/* Ensure the brand name is also unaffected */
+.navbar-brand {
+    text-decoration: none !important;
+}
+
 
 /* About Section */
 .about, .team, .locations, .contact {
