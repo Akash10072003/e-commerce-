@@ -314,3 +314,7 @@ footer p {
     background-color: #005bb5;
   }
   
+  .note-container {
+    text-align: center; /* Centers the text horizontally */
+    margin-bottom: 10px; /* Adjust space between the note and the footer */
+}
